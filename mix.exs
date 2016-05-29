@@ -33,9 +33,9 @@ defmodule Nerves.Mixfile do
   defp deps do
     [
       {:exrm, "~> 1.0.4"},
+      {:relx, git: "https://github.com/erlware/relx.git", ref: "38bf6186db7518e5b2eae9b51cc1096362697128", override: true},
       {:earmark, "~> 0.1", only: :dev},
       {:ex_doc, "~> 0.11", only: :dev},
-      {:erlware_commons, "~> 0.21.0", override: true},
       {:porcelain, "~> 2.0"}
     ]
   end
